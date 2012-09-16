@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *
+ * Copyright (c) 2011, Code Aurora Forum. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ *       copyright notice, this list of conditions and the following
+ *       disclaimer in the documentation and/or other materials provided
+ *       with the distribution.
+ *     * Neither the name of Code Aurora Forum, Inc. nor the names of its
+ *       contributors may be used to endorse or promote products derived
+ *       from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<config>
+    <panel>
+        <indicator
+            drawable="home_arrows_new"
+            width="400"
+            height="50"
+            gravity="49"
+        >
+        </indicator>
+        <hotseat-panel
+            height="56"
+            gravity="81"
+            background="hotseat_bg_new"
+        />
+        <hotseat
+            drawable="all_apps_button_new"
+            padding-left="8"
+            padding-right="8"
+            id="1"
+            all-app="1"
+        >
+            <layout rule="14">-1</layout>
+            <layout rule="12">-1</layout>
+        </hotseat>
+        <hotseat
+            drawable="hotseat_phone_new"
+            padding-left="8"
+            padding-right="8"
+            id="2"
+        >
+            <layout rule="0">1</layout>
+            <intent>intent:#Intent;action=android.intent.action.DIAL;end</intent>
+        </hotseat>
+        <hotseat
+            drawable="hotseat_message_new"
+            padding-left="8"
+            padding-right="8"
+        >
+            <layout rule="0">2</layout>
+            <intent>intent:#Intent;action=android.intent.action.MAIN;component=com.android.mms/.ui.ConversationList;end</intent>
+        </hotseat>
+        <hotseat
+            drawable="hotseat_browser_new"
+            padding-left="8"
+            padding-right="8"
+            id="3"
+        >
+            <layout rule="1">1</layout>
+            <intent>*BROWSER*</intent>
+        </hotseat>
+        <hotseat
+            drawable="hotseat_camera_new"
+            padding-left="8"
+            padding-right="8"
+        >
+            <layout rule="1">3</layout>
+            <intent>intent:#Intent;action=android.intent.action.MAIN;component=com.android.camera/.Camera;end</intent>
+        </hotseat>
+    </panel>
+    <wallpaper>bg01</wallpaper>
+    <favorites>
+        <!--  Far-left screen [0] -->
+
+        <!--  Left screen [1] -->
+        <favorite
+            type="appwidget"
+            packageName="com.google.android.apps.genie.geniewidget"
+            className="com.google.android.apps.genie.geniewidget.miniwidget.MiniWidgetProvider"
+            screen="1"
+            cellX="0"
+            cellY="0"
+            spanX="4"
+            spanY="1" />
+
+        <!--  Middle screen [2] -->
+        <favorite
+            type="appwidget"
+            packageName="com.qrd.weather"
+            className="com.qrd.weather.WeatherWidget"
+            screen="2"
+            cellX="0"
+            cellY="0"
+            spanX="4"
+            spanY="1" />
+
+        <favorite
+            type="appwidget"
+            packageName="com.android.deskclock"
+            className="com.android.alarmclock.AnalogAppWidgetProvider"
+            screen="2"
+            cellX="1"
+            cellY="1"
+            spanX="2"
+            spanY="2"/>
+
+        <favorite
+            type="favorite"
+            packageName="com.android.email"
+            className="com.android.email.activity.Welcome"
+            screen="2"
+            cellX="0"
+            cellY="3" />
+
+        <favorite
+            type="favorite"
+            packageName="com.android.qrdfileexplorer"
+            className="com.android.qrdfileexplorer.QRDFileExplorer"
+            screen="2"
+            cellX="1"
+            cellY="3" />
+
+        <favorite
+            type="favorite"
+            packageName="com.android.browser"
+            className="com.android.browser.BrowserActivity"
+            screen="2"
+            cellX="2"
+            cellY="3" />
+
+        <favorite
+            type="favorite"
+            packageName="com.android.settings"
+            className="com.android.settings.Settings"
+            screen="2"
+            cellX="3"
+            cellY="3" />
+
+        <!--  Right screen [3] -->
+        <favorite
+            type="search"
+            screen="3"
+            cellX="0"
+            cellY="0" />
+
+        <favorite
+            type="appwidget"
+            packageName="com.android.music"
+            className="com.android.music.MediaAppWidgetProvider"
+            screen="3"
+            cellX="0"
+            cellY="1"
+            spanX="4"
+            spanY="1" />
+
+        <favorite
+            type="appwidget"
+            packageName="com.android.traffic"
+            className="com.android.traffic.TrafficWidget"
+            screen="3"
+            cellX="0"
+            cellY="2"
+            spanX="3"
+            spanY="1" />
+
+        <!--  Far-right screen [4] -->
+
+    </favorites>
+</config>

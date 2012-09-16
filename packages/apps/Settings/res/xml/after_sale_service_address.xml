@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2011, Code Aurora Forum. All rights reserved.
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/after_sale_service_address">
+        
+        <PreferenceScreen android:key="Province_HLJ" android:title="@string/Province_HLJ"> </PreferenceScreen>
+        <PreferenceScreen android:key="Province_JL" android:title="@string/Province_JL"> </PreferenceScreen>
+        <PreferenceScreen android:key="Province_LN" android:title="@string/Province_LN"> </PreferenceScreen>  
+        <PreferenceScreen android:key="Province_BJ" android:title="@string/Province_BJ"> </PreferenceScreen>
+        <PreferenceScreen android:key="Province_TJ" android:title="@string/Province_TJ"> </PreferenceScreen>   
+        <PreferenceScreen android:key="Province_HB" android:title="@string/Province_HB"> </PreferenceScreen>   
+        <PreferenceScreen android:key="Province_SX" android:title="@string/Province_SX"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_NM" android:title="@string/Province_NM"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_JS" android:title="@string/Province_JS"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_ZJ" android:title="@string/Province_ZJ"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_SH" android:title="@string/Province_SH"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_SD" android:title="@string/Province_SD"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_AH" android:title="@string/Province_AH"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_FJ" android:title="@string/Province_FJ"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_JX" android:title="@string/Province_JX"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_HN" android:title="@string/Province_HN"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_HuBei" android:title="@string/Province_HuBei"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_HuNan" android:title="@string/Province_HuNan"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_GD" android:title="@string/Province_GD"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_GX" android:title="@string/Province_GX"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_HaiNan" android:title="@string/Province_HaiNan"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_YN" android:title="@string/Province_YN"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_GZ" android:title="@string/Province_GZ"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_SC" android:title="@string/Province_SC"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_CQ" android:title="@string/Province_CQ"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_ShanXi" android:title="@string/Province_ShanXi"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_GS" android:title="@string/Province_GS"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_NX" android:title="@string/Province_NX"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_QH" android:title="@string/Province_QH"> </PreferenceScreen> 
+        <PreferenceScreen android:key="Province_XJ" android:title="@string/Province_XJ"> </PreferenceScreen>      
+</PreferenceScreen>
+

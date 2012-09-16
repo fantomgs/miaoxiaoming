@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <panel>
+        <indicator
+            drawable="home_arrows_left"
+            width="93"
+            height="56"
+            gravity="3"
+            margin-left="6"
+            direction="0"
+        />
+        <indicator
+            drawable="home_arrows_right"
+            width="93"
+            height="56"
+            gravity="5"
+            margin-right="6"
+            direction="1"
+        />
+        <hotseat-panel
+            height="0"
+            gravity="1"
+        />
+        <hotseat
+            drawable="all_apps_button"
+            background="hotseat_bg_center"
+            padding-left="12"
+            padding-right="12"
+            id="1"
+            all-app="1"
+        >
+            <layout rule="14">-1</layout>
+            <layout rule="12">-1</layout>
+        </hotseat>
+        <hotseat
+            drawable="hotseat_phone"
+            background="hotseat_bg_left"
+            padding-left="12"
+            padding-right="12"
+            margin-left="4"
+        >
+            <layout rule="0">1</layout>
+            <intent>intent:#Intent;action=android.intent.action.DIAL;end</intent>
+        </hotseat>
+        <hotseat
+            drawable="hotseat_browser"
+            background="hotseat_bg_right"
+            padding-left="12"
+            padding-right="12"
+            margin-right="4"
+        >
+            <layout rule="1">1</layout>
+            <intent>*BROWSER*</intent>
+        </hotseat>
+    </panel>
+    <wallpaper>wallpaper_lake</wallpaper>
+    <favorites>
+        <!--  Far-left screen [0] -->
+
+        <!--  Left screen [1] -->
+        <favorite
+            type="appwidget"
+            packageName="com.google.android.apps.genie.geniewidget"
+            className="com.google.android.apps.genie.geniewidget.miniwidget.MiniWidgetProvider"
+            screen="1"
+            cellX="0"
+            cellY="0"
+            spanX="4"
+            spanY="1" />
+
+        <!--  Middle screen [2] -->
+        <favorite
+            type="search"
+            screen="2"
+            cellX="0"
+            cellY="0" />
+
+        <favorite
+            type="appwidget"
+            packageName="com.android.protips"
+            className="com.android.protips.ProtipWidget"
+            screen="2"
+            cellX="0"
+            cellY="1"
+            spanX="4"
+            spanY="1" />
+
+        <!--  Right screen [3] -->
+        <favorite
+            type="appwidget"
+            packageName="com.android.music"
+            className="com.android.music.MediaAppWidgetProvider"
+            screen="3"
+            cellX="0"
+            cellY="0"
+            spanX="4"
+            spanY="1" />
+
+        <favorite
+            type="appwidget"
+            packageName="com.android.vending"
+            className="com.android.vending.MarketWidgetProvider"
+            screen="3"
+            cellX="1"
+            cellY="1"
+            spanX="2"
+            spanY="2" />
+
+        <!--  Far-right screen [4] -->
+
+    </favorites>
+
+</config>
